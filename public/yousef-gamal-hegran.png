@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b86e35" />
+      <stop offset="50%" stop-color="#9a5223" />
+      <stop offset="100%" stop-color="#7c3b12" />
+    </linearGradient>
+    <linearGradient id="suitShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6c330e" />
+      <stop offset="100%" stop-color="#4e2107" />
+    </linearGradient>
+    <linearGradient id="lapelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8602b" />
+      <stop offset="100%" stop-color="#803f13" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8bf9a" />
+      <stop offset="100%" stop-color="#d49f75" />
+    </linearGradient>
+    <linearGradient id="neckGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#be875e" />
+      <stop offset="100%" stop-color="#ab744d" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1f1b" />
+      <stop offset="100%" stop-color="#140d0a" />
+    </linearGradient>
+    <linearGradient id="silverChain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#cbd5e1" />
+      <stop offset="70%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="750" fill="url(#bgGrad)" />
+
+  <!-- Subtle Studio Spotlight -->
+  <circle cx="300" cy="280" r="260" fill="#ffffff" opacity="0.45" />
+
+  <!-- Shoulders & Suit Jacket Body -->
+  <g filter="url(#softGlow)">
+    <!-- Base Torso / Jacket -->
+    <path d="M 90 750 C 90 580 140 500 210 470 L 390 470 C 460 500 510 580 510 750 Z" fill="url(#suitGrad)" />
+    
+    <!-- White Shirt Body & Collar -->
+    <path d="M 235 460 L 365 460 L 375 750 L 225 750 Z" fill="#ffffff" />
+    <path d="M 298 470 L 298 750" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Shirt Buttons -->
+    <circle cx="298" cy="530" r="4" fill="#cbd5e1" />
+    <circle cx="298" cy="590" r="4" fill="#cbd5e1" />
+    <circle cx="298" cy="650" r="4" fill="#cbd5e1" />
+
+    <!-- Left Shirt Collar Point -->
+    <polygon points="255,420 300,505 282,450" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+    <!-- Right Shirt Collar Point -->
+    <polygon points="345,420 300,505 318,450" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Jacket Left Panel (viewer's left) -->
+    <path d="M 90 750 C 90 580 140 500 210 470 L 270 480 L 245 750 Z" fill="url(#lapelGrad)" />
+    <!-- Jacket Left Notched Lapel -->
+    <polygon points="210,470 270,510 248,565 200,480" fill="url(#suitGrad)" stroke="#7c3b12" stroke-width="1" />
+
+    <!-- Jacket Right Panel (viewer's right) -->
+    <path d="M 510 750 C 510 580 460 500 390 470 L 330 480 L 355 750 Z" fill="url(#lapelGrad)" />
+    <!-- Jacket Right Notched Lapel -->
+    <polygon points="390,470 330,510 352,565 400,480" fill="url(#suitGrad)" stroke="#7c3b12" stroke-width="1" />
+
+    <!-- Breast Pocket (Viewer's right side) -->
+    <rect x="405" y="620" width="68" height="12" rx="2" fill="#7c3b12" stroke="#54250a" stroke-width="1" />
+    <!-- Pocket Square (Dark chocolate silk) -->
+    <polygon points="418,620 435,595 448,620" fill="#3b1d0c" />
+    <polygon points="432,620 445,598 456,620" fill="#4d2712" />
+
+    <!-- Ornate Silver Brooch / Lapel Pin with Double Chain -->
+    <!-- Flower/Circle Crystal Brooch -->
+    <circle cx="395" cy="565" r="14" fill="#ffffff" stroke="url(#silverChain)" stroke-width="3" />
+    <circle cx="395" cy="565" r="7" fill="#cbd5e1" />
+    <circle cx="395" cy="565" r="3" fill="#ffffff" />
+    <!-- Chain 1 hanging to pocket -->
+    <path d="M 395 579 Q 425 650 440 622" fill="none" stroke="url(#silverChain)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1,4" />
+    <!-- Chain 2 hanging lower to pocket -->
+    <path d="M 395 579 Q 430 685 450 623" fill="none" stroke="url(#silverChain)" stroke-width="2" stroke-linecap="round" stroke-dasharray="1,4" />
+  </g>
+
+  <!-- Neck -->
+  <path d="M 260 360 L 260 450 C 260 475 340 475 340 450 L 340 360 Z" fill="url(#neckGrad)" />
+  <!-- Neck shadow under chin -->
+  <ellipse cx="300" cy="385" rx="42" ry="16" fill="#8c5835" opacity="0.4" />
+
+  <!-- Head / Face -->
+  <g id="head" filter="url(#softGlow)">
+    <!-- Face Contour -->
+    <path d="M 215 260 C 215 170 385 170 385 260 C 385 330 355 390 300 390 C 245 390 215 330 215 260 Z" fill="url(#skinGrad)" />
+
+    <!-- Ears -->
+    <ellipse cx="212" cy="275" rx="10" ry="22" fill="#d49f75" />
+    <ellipse cx="388" cy="275" rx="10" ry="22" fill="#d49f75" />
+
+    <!-- Neatly Trimmed Light Beard & Mustache (signature look) -->
+    <!-- Jawline Stubble Beard -->
+    <path d="M 225 285 C 225 350 255 388 300 388 C 345 388 375 350 375 285 C 375 325 350 380 300 380 C 250 380 225 325 225 285 Z" fill="#2d1d17" opacity="0.65" />
+    <!-- Mustache -->
+    <path d="M 275 325 Q 300 328 325 325 Q 300 334 275 325 Z" fill="#2d1d17" opacity="0.75" />
+    <!-- Soul Patch -->
+    <path d="M 295 344 L 305 344 L 302 355 L 298 355 Z" fill="#2d1d17" opacity="0.6" />
+
+    <!-- Lips -->
+    <path d="M 278 335 Q 300 340 322 335" stroke="#a76852" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 284 338 Q 300 345 316 338" stroke="#8d4b38" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+    <!-- Nose -->
+    <path d="M 298 250 L 295 305 Q 300 312 305 305 L 302 250" fill="none" stroke="#ba8560" stroke-width="2.5" stroke-linecap="round" />
+    <!-- Nostrils -->
+    <ellipse cx="288" cy="307" rx="3.5" ry="2" fill="#8c5835" />
+    <ellipse cx="312" cy="307" rx="3.5" ry="2" fill="#8c5835" />
+
+    <!-- Eyes (Almond shape, dark brown) -->
+    <!-- Left Eye (viewer's left) -->
+    <path d="M 252 245 Q 268 238 284 245 Q 268 252 252 245 Z" fill="#ffffff" stroke="#3d271e" stroke-width="1.5" />
+    <circle cx="268" cy="245" r="6" fill="#261711" />
+    <circle cx="269" cy="243" r="2" fill="#ffffff" />
+    <!-- Left Eyebrow -->
+    <path d="M 246 232 Q 268 222 288 231" stroke="#1c120e" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+    <!-- Right Eye (viewer's right) -->
+    <path d="M 316 245 Q 332 238 348 245 Q 332 252 316 245 Z" fill="#ffffff" stroke="#3d271e" stroke-width="1.5" />
+    <circle cx="332" cy="245" r="6" fill="#261711" />
+    <circle cx="333" cy="243" r="2" fill="#ffffff" />
+    <!-- Right Eyebrow -->
+    <path d="M 312 231 Q 332 222 354 232" stroke="#1c120e" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+    <!-- Hair (Signature modern textured crop, dark wavy curls, clean fade on sides) -->
+    <!-- Side Fade -->
+    <path d="M 215 255 C 215 220 225 185 240 165 C 235 200 230 230 220 255 Z" fill="#2b1c16" opacity="0.8" />
+    <path d="M 385 255 C 385 220 375 185 360 165 C 365 200 370 230 380 255 Z" fill="#2b1c16" opacity="0.8" />
+    
+    <!-- Hair Top & Textured Wavy Fringe -->
+    <path d="M 220 190 C 220 120 380 120 380 190 C 375 195 360 190 350 200 C 340 192 325 202 310 195 C 295 203 280 194 265 202 C 250 194 235 200 220 190 Z" fill="url(#hairGrad)" />
+    <!-- Additional Textured Wavy Forehead bangs -->
+    <path d="M 240 195 Q 255 212 270 198 Q 285 215 300 198 Q 315 214 330 197 Q 345 213 360 196" stroke="#1c120e" stroke-width="4" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Developer Badge Watermark at corner (Subtle) -->
+  <g opacity="0.7" transform="translate(40, 680)">
+    <rect width="180" height="32" rx="6" fill="#0f172a" opacity="0.8" />
+    <text x="12" y="21" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">YOUSEF HEGRAN</text>
+  </g>
+</svg>
